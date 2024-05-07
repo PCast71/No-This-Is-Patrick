@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Patrick Castorena</title>
+    <title> 🍀Patrick Castorena🍀</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
+
 <body>
-    <section>
     <header>
-        <h1 class="opening">Patrick Castorena</h1>
-            <nav class="navbar">
-        <a href="#About-Me">About Me</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Contact-Me">Contact Info</a>
-         </nav>
-         <h2 class="greeting">Welcome!</h2>
-         <h1>All About Me</h1>
-         <img class="bio-pic" src="assets/images/Lake-Como.jpg" alt="A picture of Patrick at Lake Como in Italy"/>
-         <p>My name is <strong>Patrick Castorena</strong>, although I am new to coding, I have been passionate about technology and how it works for as long as I can remember.
-         From the time I played my first video game, to sleepless nights wondering how in the world this small device in my hand, somehow connected me to billions of people across the globe,
-         I have always wondered "What makes all of this work and how can I make these things work myself?". 
-         </p>
-    </header>
-    </section>
+        <h1 class="title">My Web Portfolio</h1>
 
-    <section class="projects">
-        <h1>Projects Completed</h1>
-        <h3 class="study"><a href="https://pcast71.github.io/prework-study-guide/" target="blank"><strong>Pre-Work Study Guide</strong></a></h3>
-        <img class="study-pic" src="assets/images/Pre-work.jpeg" alt="A screen capture of the deployed study guide."/>
-        <h3 class="refactor">Code Refactoring</h3>
-    </section>
-
-    <section class="contact-info">
-        <h2>Contat Info</h2>
-        <ul>
-            <li><a href="assets/contact-page/contactForm.html" target="blank"><strong>patrickc77hhs@gmail.com</strong></a></li>
-            <li><strong>(385)298-5117</strong></li>
-            <li><a href="https://github.com/dashboard" title="Github page" target="blank"><strong>GitHub</strong></a></li>
-        </ul>
-
-    </section>
+<nav>
+    <ul class="navbar">
+        <li><a href="#bio">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://github.com/PCast71?tab=repositories" target="blank">GitHub</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+</nav>
+</header>
 </body>
-</html>
+
+<main>
+    <aside>
+        <section class="bio" id="bio">
+            <img src="./assets/images/Lake-Como.jpg" alt="a picture of Patrick at Lake Como">
+            <h2>About Me</h2>
+                <p>
+                    Hello, my name is <strong>Patrick Castorena</strong>. I am a 27 year old male with a passion for technology and how it all works under the surface.
+                    I am very outdoor oriented, but enjoy the amenities that technology provides in everyday work and personal life as well. I am currently enrolled
+                    in the University of Utah full stack coding bootcamp, in this bootcamp I have learned HTML, CSS, and JavaScript. I hope to broaden my skillset
+                    and find a career in the field I have had a passion for since I was a small child. The grid below will provide some insight into the capabilites 
+                    I currently posess.
+                </p>
+        </section>
+        </aside>
+        <hr />
+       
+    <section class="projects" id="projects">
+        <img src="./assets/images/Password.png" alt="screenshot of password generator page">
+        <img src="./assets/images/Scheduler.png" alt="screenshot of JavaScript worday planner">
+        <img src="./assets/images/Pre-work.jpeg" alt="screenshot of Pre-work study guide">
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+            <form method="POST" action="mailto:patrickc77hhs@gmail.com" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+    </section>
+</main>
