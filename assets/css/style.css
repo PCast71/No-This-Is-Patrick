@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+
+    margin: 0;
+}
+
+.title {
+    color: white;
+    background-color: rgb(50, 119, 199);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar {
+    background-color: rgb(50, 119, 199);
+    text-align: right;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: rgb(212, 215, 219)
+}
+
+.bio p {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6 px rgba(0,0,0,0.5);
+    max-width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bio img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1;
+    padding: 10px;
+}
+
+.project img {
+    width: 50%;
+    height: auto;
+}
