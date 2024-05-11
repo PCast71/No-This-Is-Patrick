@@ -73,7 +73,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:  rgb(101, 145, 196);
+    background-image: url('https://images.unsplash.com/photo-1610147323479-a7fb11ffd5dd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
 }
 
 .bio img {
@@ -94,17 +94,32 @@ h1 {
 }
 
 .project {
+    position: relative;
+    overflow: hidden;
     background: #f9f9f9;
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
+.project:hover .overlay {
+    opacity: 1;
+}
 
 
 .project.large {
-    width: 33%;
+    width: 100%;
     align-self: center;
 }
 
@@ -131,9 +146,49 @@ h1 {
 }
 
 .contact {
-    display: flex;
-    list-style: none;
-    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: left;
 
+}
+
+.contact input[type='text'],
+.contact input[type='email'],
+.contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    background-color: rgb(50, 119, 199);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: rgb(101, 145, 196);
+}
+
+@media (max-width: 600px) {
+    .contact {
+        width: 90%;
+        padding: 10px;
+    }
 }
 
